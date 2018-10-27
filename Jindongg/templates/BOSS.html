@@ -3,19 +3,24 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>购物网站作品</title>
+<title>海购商城</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
 </head>
 <link rel="stylesheet" type="text/css" href="{% static 'css/play.css' %} ">
 <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %} ">
+<link rel="stylesheet"href="{% static 'css/flash.css' %} ">
 <script type="text/javascript" src="{% static 'js/jquery-1.11.1.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/seacrh.js' %}"></script>
-<body>
+<script type="text/javascript"  src="{% static 'js/flash.js' %}" ></script>
+<body onload="clocks()">
 <div class="A">
   <div class="B">
-    <img src="{% static 'image/6.jpg' %}" width="65" height="65px" alt=""/>
-  </div>
-  <div class="C">
-    <img src="{% static 'image/1x.jpg' %}" height="50" alt=""/>
+      <div id="b1">
+        <img src="{% static 'image/jingdong1.jpg' %}" width="60px" height="60px" alt=""/>
+      </div>
+      <div id="b2">
+        <img src="{% static 'image/1x.jpg' %}" height="60px" alt=""/>
+      </div>
   </div>
   <div class="D" align="center">
     <input type="search" id="search">
@@ -27,18 +32,16 @@
       </a>
     </div>
   </div>
-<!--https://dd-search.jd.com/?terminal=pc&newjson=1&ver=2&zip=1&key=car&pvid=936186267e4f41d88cd860400ab0d41e&t=1536827501909&curr_url=www.jd.com%2F&callback=jQuery3451402-->
-<!--https://search.jd.com/Search?keyword=shouji&enc=utf-8&wq=bb&pvid=07554f2e6c484b79926372fc64f5d6e4-->
 
 <div class="E">
     <ul>
         <li class="E_2">
             <p>
-                <a href="//shouji.jd.com/">手机</a>/
-                <a href="//wt.jd.com">运营商</a>/
-                <a href="//shuma.jd.com/">数码</a>/
-                <a href="//diannao.jd.com/">电脑</a>/
-                <a href="//bg.jd.com">办公</a>
+                <a href="#">手机</a>/
+                <a href="#">运营商</a>/
+                <a href="#">数码</a>/
+                <a href="#">电脑</a>/
+                <a href="#">办公</a>
             </p>
             <ul class="E_2_1">
                 <li>运营商</li>
@@ -49,10 +52,10 @@
         </li>
         <li class="E_2">
             <p>
-                <a href="//channel.jd.com/furniture.html">家具</a>/
-                <a href="//channel.jd.com/home.html">家居</a>/
-                <a href="channel.jd.com/decoration.html">家装</a>/
-                <a href="//channel.jd.com/kitchenware.html">厨具</a>
+                <a href="#">家具</a>/
+                <a href="#">家居</a>/
+                <a href="#">家装</a>/
+                <a href="#">厨具</a>
             </p>
             <ul class="E_2_2">
                 <li>运营商</li>
@@ -63,10 +66,10 @@
         </li>
         <li class="E_2">
             <p>
-                <a href="//channel.jd.com/1315-1342.html">男装</a>/
-                <a href="//channel.jd.com/1315-1343.html">女装</a>/
-                <a href="//channel.jd.com/children.html">童装</a>/
-                <a href="//channel.jd.com/1315-1345.html">内衣</a>
+                <a href="#">男装</a>/
+                <a href="#">女装</a>/
+                <a href="#">童装</a>/
+                <a href="#">内衣</a>
             </p>
             <ul class="E_2_3">
                 <li>运营商</li>
@@ -77,9 +80,9 @@
         </li>
         <li class="E_2">
             <p>
-                <a href="//channel.jd.com/beauty.html">美妆</a>/
-                <a href="//channel.jd.com/beauty.html">个人护理</a>/
-                <a href="//channel.jd.com/pet.html">宠物</a>
+                <a href="#">美妆</a>/
+                <a href="#">个人护理</a>/
+                <a href="#">宠物</a>
             </p>
             <ul class="E_2_4">
                 <li>运营商</li>
@@ -90,9 +93,9 @@
         </li>
         <li class="E_2">
               <p>
-                  <a href="//realestate.jd.com">房产</a>/
-                  <a href="//car.jd.com/">汽车</a>/
-                  <a href="//che.jd.com/">汽车用品</a>
+                  <a href="#">房产</a>/
+                  <a href="#">汽车</a>/
+                  <a href="#">汽车用品</a>
                 </p>
             <ul class="E_2_5">
                 <li>运营商</li>
@@ -103,10 +106,10 @@
         </li>
         <li class="E_2">
             <p>
-              <a href="//channel.jd.com/food.html">食品</a>/
-              <a href="//jiu.jd.com">酒类</a>/
-              <a href="//fresh.jd.com">生鲜</a>/
-              <a href="//china.jd.com">特产</a>
+              <a href="#">食品</a>/
+              <a href="#">酒类</a>/
+              <a href="#">生鲜</a>/
+              <a href="#">特产</a>
             </p>
             <ul class="E_2_6">
                 <li>运营商</li>
@@ -117,8 +120,8 @@
         </li>
         <li class="E_2">
             <p>
-              <a href="//channel.jd.com/1672-2599.html">礼品鲜花</a>/
-              <a href="//nong.jd.com">农资绿植</a>
+              <a href="#">礼品鲜花</a>/
+              <a href="#">农资绿植</a>
             </p>
             <ul class="E_2_7">
                 <li>运营商</li>
@@ -129,8 +132,8 @@
         </li>
         <li class="E_2">
             <p>
-              <a href="//channel.jd.com/1672-2599.html">医药保健</a>/
-              <a href="//nong.jd.com">计生情趣</a>
+              <a href="#">医药保健</a>/
+              <a href="#">计生情趣</a>
             </p>
             <ul class="E_2_8">
                 <li>运营商</li>
@@ -141,9 +144,9 @@
         </li>
         <li class="E_2">
             <p>
-              <a href="//book.jd.com">图书</a>/
-              <a href="//mvd.jd.com">音像</a>/
-              <a href="//e.jd.com/ebook.html">电子书</a>
+              <a href="#">图书</a>/
+              <a href="#">音像</a>/
+              <a href="#">电子书</a>
             </p>
             <ul class="E_2_9">
                 <li>运营商</li>
@@ -154,10 +157,10 @@
         </li>
         <li class="E_2">
             <p>
-              <a href="//jipiao.jd.com/">机票</a>/
-              <a href="//hotel.jd.com/">酒店</a>/
-              <a href="//trip.jd.com/">旅游</a>/
-              <a href="//ish.jd.com/">生活</a>
+              <a href="#">机票</a>/
+              <a href="#">酒店</a>/
+              <a href="#">旅游</a>/
+              <a href="#">生活</a>
             </p>
             <ul class="E_2_10">
                 <li>运营商</li>
@@ -168,10 +171,10 @@
         </li>
         <li class="E_2">
             <p>
-              <a href="//licai.jd.com/">理财</a>/
-              <a href="//z.jd.com/">众酬</a>/
-              <a href="//baitiao.jd.com">白条</a>/
-              <a href="//bao.jd.com/">保险</a>
+              <a href="#">理财</a>/
+              <a href="#">众酬</a>/
+              <a href="#">白条</a>/
+              <a href="#">保险</a>
             </p>
             <ul class="E_2_11">
                 <li>运营商</li>
@@ -218,102 +221,209 @@
   </div>
 </div>
 <div class="G">
-  <div id="G_1">
-    <img src="{% static 'image/5x.jpg' %}" width="50" height="50" alt=""/>
-    <p>请登录用户名</p>
-    <a href="/login/"><img width="30px" height="30px" src="{% static 'image/登陆.png'%}"></a>
-    <a href="/regist/"><img width="30px" height="30px" src="{% static 'image/注册.png'%}"></a>
-  </div>
-  <div class="G_2">
-    <P align="center">
-      <font size="+3" color="#F319E4">国庆劲爆好礼品</font>
-    </P>
-  </div>
-  <div class="G_3">
-    <div class="g_1">
-      <p>
-        <a href="//chongzhi.jd.com/">话费</a>
-      </p>
+      <div class="G_1">
+        <p>Hi~欢迎来到海购</p>
+      </div>
+      <div class="login">
+            <a href="/login/">
+                <font>登陆</font>
+            </a>
+          </div>
+      <div class="regist">
+              <a href="/regist/">
+                  <font>注册</font>
+              </a>
+          </div>
+      <div class="G_2">
+        <P align="center">
+          <font size="+3" color="#F319E4">万圣节劲爆好礼品</font>
+        </P>
+      </div>
+      <div class="G_3">
+        <div class="g_1">
+          <p>
+            <a href="#">话费</a>
+          </p>
+        </div>
+        <div class="g_2">
+          <p>
+            <a href="#">机票</a>
+          </p>
+        </div>
+        <div class="g_3">
+          <p>
+            <a href="#">酒店</a>
+          </p>
+        </div>
+        <div class="g_4">
+          <p>
+            <a href="#">游戏</a>
+          </p>
+        </div>
+        <div class="g_5">
+          <p>
+            <a href="#">企业购</a>
+          </p>
+        </div>
+        <div class="g_6">
+          <p>
+            <a href="#">加油卡</a>
+          </p>
+        </div>
+        <div class="g_7">
+          <p>
+            <a href="#">电影票</a>
+          </p>
+        </div>
+        <div class="g_8">
+          <p>
+            <a href="#">火车票</a>
+          </p>
+        </div>
+        <div class="g_9">
+          <p>
+            <a href="#">筹码</a>
+          </p>
+        </div>
+        <div class="g_10">
+          <p>
+            <a href="#">理财</a>
+          </p>
+        </div>
+        <div class="g_11">
+          <p>
+            <a href="#">礼品卡</a>
+          </p>
+        </div>
+        <div class="g_12">
+          <p>
+            <a href="#">白条</a>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="g_2">
-      <p>
-        <a href="//jipiao.jd.com/">机票</a>
-      </p>
-    </div>
-    <div class="g_3">
-      <p>
-        <a href="//hotel.jd.com/">酒店</a>
-      </p>
-    </div>
-    <div class="g_4">
-      <p>
-        <a href="//game.jd.com/">游戏</a>
-      </p>
-    </div>
-    <div class="g_5">
-      <p>
-        <a href="https://b.jd.com/">企业购</a>
-      </p>
-    </div>
-    <div class="g_6">
-      <p>
-        <a href="https://passport.jd.com/new/login.aspx?ReturnUrl=https%3A//jiayouka.jd.com/">加油卡</a>
-      </p>
-    </div>
-    <div class="g_7">
-      <p>
-        <a href="https://movie.jd.com/index.html">电影票</a>
-      </p>
-    </div>
-    <div class="g_8">
-      <p>
-        <a href="https://train.jd.com/">火车票</a>
-      </p>
-    </div>
-    <div class="g_9">
-      <p>
-        <a href="https://z.jd.com/sceneIndex.html?from=jrscyn_20162">筹码</a>
-      </p>
-    </div>
-    <div class="g_10">
-      <p>
-        <a href="https://licai.jd.com/?from=jrscyn_20161">理财</a>
-      </p>
-    </div>
-    <div class="g_11">
-      <p>
-        <a href="https://o.jd.com/market/index.action">礼品卡</a>
-      </p>
-    </div>
-    <div class="g_12">
-      <p>
-        <a href="https://baitiao.jd.com/?from=jrscyn_20160">白条</a>
-      </p>
-    </div>
-  </div>
-  </div>
 </div>
+
+<div class="loot_shopping">
+			<div class="loot_shopping_a">
+				<div class="loot_shopping_a_a1">海购秒杀</div>
+				<div class="loot_shopping_a_a2">OCEAN</div>
+				<i class="loot_shopping_a_a5"><img src="{% static 'image/flash.jpg' %}" height="50px" width="30px"/></i>
+				<div class="loot_shopping_a_a3">本场距离结束还剩</div>
+				<div class="loot_shopping_a_a4">
+	        		<img id="time" width="25px"/>
+					<img id="time1" width="25px"/>
+					<img id="time2" width="25px"/>
+					<img id="time3" width="25px"/>
+					<img id="time4" width="25px"/>
+					<img id="time5" width="25px"/>
+				</div>
+    		</div>
+    		<div class="loot_shopping_b">
+    			<a class="sk_it" href="#">
+	        		<img src="{% static 'image/Apple_Watch_Series_3.jpg' %}"/>
+	        		<p class="sk_it_a1">&nbsp;&nbsp; Apple Watch Series 3智能手表（GPS款 38毫米 深空灰色铝金属表壳 黑色运动型表带 ）</p>
+	        		<div class="sk_item_price">
+	        			<span class="sk_item_price_new">
+	        				<i>￥</i>
+	        				<span>399.00</span>
+	        			</span>
+	        			<span class="sk_item_price_origin">
+	        				<i>￥</i>
+	        				<span>299.00</span>
+	        			</span>
+	        		</div>
+    			</a>
+    		</div>
+    		<div class="loot_shopping_b">
+    			<a class="sk_it" href="#">
+	        		<img src="{% static 'image/miphone.jpg' %}"/>
+	        		<p class="sk_it_a1">&nbsp;&nbsp; 努比亚 nubia 红魔 全面屏 游戏手机 8GB+128GB 战地迷彩限量版 移动联通电信4G手机 双卡双待 ）</p>
+	        		<div class="sk_item_price">
+	        			<span class="sk_item_price_new">
+	        				<i>￥</i>
+	        				<span>2999.00</span>
+	        			</span>
+	        			<span class="sk_item_price_origin">
+	        				<i>￥</i>
+	        				<span>2699.00</span>
+	        			</span>
+	        		</div>
+    			</a>
+    		</div>
+    		<div class="loot_shopping_b">
+    			<a class="sk_it" href="#">
+	        		<img src="{% static 'image/refrigerator.jpg' %}"/>
+	        		<p class="sk_it_a1">&nbsp;&nbsp; 西门子 SIEMENS 德国原装进口5D喷淋 超薄9套大容量除菌家用洗碗机SR23E251TI（白色） ）</p>
+	        		<div class="sk_item_price">
+	        			<span class="sk_item_price_new">
+	        				<i>￥</i>
+	        				<span>5890.00</span>
+	        			</span>
+	        			<span class="sk_item_price_origin">
+	        				<i>￥</i>
+	        				<span>3699.00</span>
+	        			</span>
+	        		</div>
+    			</a>
+    		</div>
+    		<div class="loot_shopping_b">
+    			<a class="sk_it" href="#">
+	        		<img src="{% static 'image/back.jpg' %}"/>
+	        		<p class="sk_it_a1">&nbsp;&nbsp; 乔丹 男鞋跑步鞋舒适透气运动鞋 XM3570242 黑色/银色 42 ）</p>
+	        		<div class="sk_item_price">
+	        			<span class="sk_item_price_new">
+	        				<i>￥</i>
+	        				<span>169.00</span>
+	        			</span>
+	        			<span class="sk_item_price_origin">
+	        				<i>￥</i>
+	        				<span>139.00</span>
+	        			</span>
+	        		</div>
+    			</a>
+    		</div>
+    		<div class="loot_shopping_b">
+    			<a class="sk_it" href="#">
+	        		<img src="{% static 'image/bad.jpg' %}"/>
+	        		<p class="sk_it_a1">&nbsp;&nbsp; 欧时纳包包女包2018秋冬新款时尚单肩包斜挎包撞色刺绣韩版小方包链条 甜蜜红【现货发售】 ）</p>
+	        		<div class="sk_item_price">
+	        			<span class="sk_item_price_new">
+	        				<i>￥</i>
+	        				<span>318.00</span>
+	        			</span>
+	        			<span class="sk_item_price_origin">
+	        				<i>￥</i>
+	        				<span>166.00</span>
+	        			</span>
+	        		</div>
+    			</a>
+    		</div>
+
+
+
+		</div>
 <div class="H">
   <div class="H_1">
-    <img src="{% static '/image/7x.jpg' %}" width="50" height="51" alt=""/>
+    <img src="{% static '/image/more.png' %}" width="25" height="25" alt=""/>
     <p>
       <b>品类齐全，轻松购物</b>
     </p>
   </div>
   <div class="H_2">
-    <img src="{% static '/image/8.jpg' %}" width="50" height="51" alt=""/>
+    <img src="{% static '/image/quike.png' %}" width="25" height="25" alt=""/>
     <p>
       <b>多仓首发，急速配送</b>
     </p>
   </div>
   <div class="H_3">
-    <img src="{% static '/image/9.jpg' %}" width="50" height="51" alt=""/>
+    <img src="{% static '/image/good.png' %}" width="25" height="25" alt=""/>
     <p>
       <b>正品行货，精致服务</b>
     </p>
   </div>
   <div class="H_4">
-    <img src="{% static '/image/10.jpg' %}" width="50" height="51" alt=""/>
+    <img src="{% static '/image/save.png' %}" width="25" height="25" alt=""/>
     <p>
       <b>天天低价，畅选无忧</b>
     </p>
