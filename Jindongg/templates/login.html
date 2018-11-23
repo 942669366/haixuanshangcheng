@@ -11,8 +11,19 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/footer.css' %}">
-
+<!--<script type="text/javascript"  src="{% static 'js/hint.js' %}" ></script>-->
+<script>
+		function hint(){
+			var a = "{{ tokelit.0 }}";
+			alert(a);
+		}
+</script>
 <body>
+	<script>
+		{% if tokelit.0 != None %}
+			hint();
+		{% endif %}
+	</script>
 	<!-- 顶部导航 start -->
 	<div class="topnav">
 		<div class="topnav_bd w990 bc">
@@ -25,7 +36,7 @@
 					<li class="line">|</li>
 					<li><a href="/flow1/">我的订单</a></li>
 					<li class="line">|</li>
-					<li>客户服务</li>
+					<li>客户服务</li>gg
 
 				</ul>
 			</div>
@@ -51,7 +62,7 @@
 		</div>
 		<div class="login_bd">
 			<div class="login_form fl">
-				<form action="" method="post">
+				<form action="/check/" method="post">
 					<ul>
 						<li>
 							<label for="">用户名：</label>
@@ -133,4 +144,5 @@
 	<!-- 底部版权 end -->
 
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 
-list=["static/image/数字0.jpg","static/image/数字1.jpg","static/image/数字2.jpg","static/image/数字3.jpg","static/image/数字4.jpg","static/image/数字5.jpg","static/image/数字6.jpg","static/image/数字7.jpg","static/image/数字8.jpg","static/image/数字9.jpg"]
+list=["/static/image/数字0.jpg","/static/image/数字1.jpg","/static/image/数字2.jpg","/static/image/数字3.jpg","/static/image/数字4.jpg","/static/image/数字5.jpg","/static/image/数字6.jpg","/static/image/数字7.jpg","/static/image/数字8.jpg","/static/image/数字9.jpg"]
 function clocks(){
 	date=new Date()
 	hours=date.getHours()
