@@ -328,7 +328,7 @@
 		<div class="fanye">
 			{% if pnum == 1 %}
 				<a href="#">首页</a>
-				<a href="#">上一页</a>
+				<a>上一页</a>
 				{% else %}
 				<a href="/shouji/1/">首页</a>
     			<a href="/shouji/{{ pnum|add:'-1' }}/">上一页</a>
@@ -337,7 +337,11 @@
 				<a href="/shouji/2/">2</a>
 				<a href="#">3</a>
 				<a href="#">4</a>
+			{% if pnum < pnums %}
     			<a href="/shouji/{{ pnum|add:'1' }}/">下一页</a>
+				{% else %}
+				<a>下一页</a>
+			{% endif %}
     			<a href="/shouji/{{ pnums }}/">尾页</a>
 				<font>第</font>
 				<input id="pn" style="width: 20px" type="text" value="{{ pnum }}">/{{ pnums }}
